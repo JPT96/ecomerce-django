@@ -1,5 +1,5 @@
-from django.shortcuts import render, httpResponse
+from django.shortcuts import render 
 
 # Create your views here.
 def say_hello(request):
-    return httpResponse("hello")
+    return render(request, "static/static.html")
